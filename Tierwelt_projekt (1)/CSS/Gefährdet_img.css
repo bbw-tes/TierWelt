@@ -1,0 +1,35 @@
+
+div.RedList{
+	width: auto; 
+    height: auto;
+    overflow: hidden; /* Um sicherzustellen, dass die Höhe des Containers sich an den Inhalt anpasst */
+    margin: 0 2em 2em 2em;
+ }
+    
+div.RedList img{
+	width: 250px; 
+    height: auto;
+    margin-right: 20px; 
+    float: left;
+}
+
+div.RedList img:hover {
+    -webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+div.RedList p {
+    margin-top: 0; /* Entferne den oberen Abstand des Absatzes */
+    font-family: cursive;
+}
+
+div.RedList a {
+    font-size: inherit;
+}
+
+aside {
+	width: 700px;
+	float: right;
+}

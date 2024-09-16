@@ -1,0 +1,61 @@
+#qrButton {
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #0d5b3d; 
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #qrButton:hover {
+            background-color: #00aab3; 
+        }
+        
+        /*behind the scene*/
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparentes Schwarz */
+            z-index: 999; /* Über allem anderen */
+        }
+
+        #overlay img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%; /* Maximale Breite des Bildes */
+            max-height: 80%; /* Maximale Höhe des Bildes */
+        }
+
+        #closeButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+    
+        #something:last-of-type {
+            position: absolute;
+            transform: rotate(10deg);
+            background-color: #0d5b3d;  
+            border: solid black;
+            padding: 10px;
+            border-radius: 8px;
+            align-self: end;
+            width: 200px;
+            margin-left: 1000px;
+            margin-top: 0px;
+            
+        }

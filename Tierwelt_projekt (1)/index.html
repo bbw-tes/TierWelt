@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierwelt</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Button.css">
+</head>
+<body>
+    <p id="something">Tauch rein</p>
+    <h1>Tierwelt </h1>
+    <!--Navigation-->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Gefährdet.html">Gefährdete Tiere</a>
+                </li>
+                <li>
+                    <a href="Lebensräume.html">Ihre Lebensräume</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt/Impressum</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+        <!--Navigation-->
+        <!--Welcome Intro-->
+	<div class="intro"> 
+		<h1 class="logo-header"><span class="logo">Die Schattenseite</span><span class="logo">der Tierwelt</span></h1>
+	</div>
+        
+    <main>
+        <section>
+            <h2>Willkommen der Schattenseiten der Tierewelt!</h2>
+            <p>Dies ist eine Website, die sich der dunklen Realitäten stellt, mit denen unsere tierischen Mitbewohner auf unserem Planeten konfrontiert sind.</p>
+            <p>Seit Jahrhunderten beeinflusst der Mensch die Natur - oft zum Nachteil der Tierwelt. Von der Zerstörung natürlicher Lebensräume bis hin zur Ausrottung ganzer Arten sind die Auswirkungen unserer Handlungen spürbar.</p>  
+            <p>Doch wir stehen nicht machtlos da. Unsere Website ist eine Plattform des Engagements und der Aufklärung. Wir setzen uns für den Schutz bedrohter Arten ein und kämpfen für eine nachhaltigere Zukunft, in der Mensch und Tier im Einklang miteinander existieren.</p>  
+            <p>Bist du bereit, ein Teil dieser Bewegung zu werden? Begleite auf unserer Reise durch die Tierwelt und lass gemeinsam für den Erhalt unserer kostbaren Natur kämpfen.</p>
+        </section>
+
+       <!-- Button zum Anzeigen des QR-Codes -->
+       <button id="qrButton" onclick="showQRCode()">An WWF Spenden</button>
+       <!-- Overlay für den QR-Code -->
+       <div id="overlay" onclick="hideQRCode()">
+           <span id="closeButton">&times;</span>
+           <img id="qrCodeImage" src="Pictures/QR/QR_spende.png" alt="QR-Code für Spenden">
+       </div>
+    </main>
+        
+    <footer>
+        <p>&copy; 2024 Tierwelt Website. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+        <script src="JS/Intro.js"></script>
+        <script src="JS/Button_spende.js"></script>
+</html>

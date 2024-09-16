@@ -1,0 +1,55 @@
+
+div.animal-habitat {
+	width: auto; 
+    height: auto;
+    overflow: hidden; /* Um sicherzustellen, dass die Höhe des Containers sich an den Inhalt anpasst */
+    margin: 0 2em 2em 2em;
+ }
+    
+div.animal-habitat img {
+	width: 250px; 
+    height: auto;
+    margin-right: 20px; 
+    float: left;
+}
+
+div.animal-habitat img:hover {
+    -webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+    
+}
+div.animal-habitat p {
+    margin-top: 0; /* Entferne den oberen Abstand des Absatzes */
+    font-family: cursive;
+}
+
+div.animal-habitat a {
+    font-size: inherit;
+}
+
+div.animal-habitat .image-container {
+    width: 250px; 
+    height: auto;
+    margin-right: 20px; 
+    float: left;
+    border: 2px solid black; 
+    position: relative; 
+}
+
+div.animal-habitat .image-container p {
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    margin: 0; 
+    padding: 10px; 
+    transition: opacity 0.3s ease; /*Transitionsanimation*/
+    opacity: 1;
+}
+
+div.animal-habitat .image-container:hover p {
+    opacity: 0; 
+}
